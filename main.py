@@ -1,7 +1,7 @@
 from telebot import types
 import telebot
 
-bot = telebot.TeleBot('7177297829:AAFlOmNwqGPoLYRE2MksqTcTPVMY7MNQEzs')
+bot = telebot.TeleBot('')
 
 def webAppKeyboard(): #создание клавиатуры с webapp кнопкой
    keyboard = types.ReplyKeyboardMarkup(row_width=1) #создаем клавиатуру
