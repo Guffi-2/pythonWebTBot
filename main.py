@@ -7,9 +7,11 @@ def webAppKeyboard(): #создание клавиатуры с webapp кноп�
    keyboard = types.ReplyKeyboardMarkup(row_width=1) #создаем клавиатуру
    webAppPin = types.WebAppInfo("https://pinterest.com") #создаем webappinfo - формат хранения url
    webAppYa = types.WebAppInfo("https://ya.ru")
+   webAppTik = types.WebAppInfo("https://tiktok.com")
    one_butt = types.KeyboardButton(text="📌pinterest", web_app=webAppPin) #создаем кнопку типа webapp
-   second_btn = types.KeyboardButton(text='🔍yandex', web_app=webAppYa)
-   keyboard.add(one_butt, second_btn) #добавляем кнопки в клавиатуру
+   sec_btn = types.KeyboardButton(text='🔍yandex', web_app=webAppYa)
+   thee_btn = types.KeyboardButton(text='🎵tiktok', web_app=webAppTik)
+   keyboard.add(one_butt, sec_btn, thee_btn) #добавляем кнопки в клавиатуру
    print('pon ')
    return keyboard #возвращаем клавиатуру
 
